@@ -1,12 +1,24 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
-
+import HashLoader from "react-spinners/HashLoader";
 import { Everything, Home } from './pages/index';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
+
+  const [loading , setLoading] = useState(false)
+  
+  useEffect(()=>{
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 5000);
+  },[])
+
+  //////////////////////
+
 
   useEffect(() => {
     window.scrollTo(0, 0)
@@ -75,15 +87,28 @@ function App() {
 
   return (
     <>
-    <button className='up'>up</button>
-      <Router>
-        <Routes>
-          <Route path='/Organic-shop/' element={<Home />} />
-          <Route path='/Everything' element={<Everything />} />
-        </Routes>
-      </Router>
+        <button className='up'>up</button>
+      {loading ? (
+        <HashLoader
+        style={{}}
+        className='loading'
+          color={"#41a110"}
+          loading={loading}
+          size={30}
+          aria-label="Loading Spinner"
+          data-testid="loader"
+        />
+      ) : (
+        <>
+          <Router>
+            <Routes>
+              <Route path='/Organic-shop/' element={<Home />} />
+              <Route path='/Everything' element={<Everything />} />
+            </Routes>
+          </Router>
+        </>
+      )}
     </>
   )
-}
-
+      }
 export default App
