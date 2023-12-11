@@ -57,7 +57,7 @@ body{
     animation-timing-function: linear;
   }
   .up.look{
-    right: 15px;
+    right: 50px;
   }
 
 @keyframes up{
