@@ -1,0 +1,6 @@
+.best_product{
+    padding-bottom: 15vh;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: var(--color-green);
+}

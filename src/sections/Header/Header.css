@@ -1,0 +1,33 @@
+.logo{
+    width: 25vh;
+    margin-left: 20px;
+}
+nav.navbar.navbar-expand-lg.navbar-light {
+    background-color: white;
+}
+.difrrens{
+    display: flex;
+    position: absolute;
+    right: 22vh;
+}
+.total{
+    color: var(--color-green);
+}
+.nav-item:hover{
+    color: var(--color-green);
+}
+.product{
+    margin-top: 10vh;
+    width: 90%;
+}
+.title{
+    margin-top: 10vh;
+}
+@media (max-width: 	992px) {
+    .difrrens {
+        position: sticky;
+    }
+}
+.Everything{
+    border-bottom:2px solid var(--color-green) ;
+}

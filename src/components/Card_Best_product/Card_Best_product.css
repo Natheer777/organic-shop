@@ -1,0 +1,17 @@
+.swiper-button-prev::after{
+    display: none;
+}
+.swiper-button-next::after{
+   display: none; 
+}
+.product_item_img{
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80%;
+}
+span svg{
+    width: 20px;
+    color: var(--color-green);
+}

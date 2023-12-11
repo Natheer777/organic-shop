@@ -1,42 +1,76 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+:root{
+    --color-green :#92c355;
+    --color-greenMore: #41a110;
+}
+body{
+    overflow-x: hidden;
+}
+.left{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-11%);
+    transition: all 1s;
+}
+.right{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(11%);
+    transition: all 1s;
+}
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    /* transform: translateX(100%); */
+    transition: all 1s;
+}
+.top{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(30%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: -50px;
+    background-color:var(--red--color);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 8px 15px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.9s;
+    animation-name: upp;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
   }
-  to {
-    transform: rotate(360deg);
+  .up.look{
+    right: 10px;
   }
+
+@keyframes up{
+    50%{
+        transform: translateY(20px);
+    }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+::-webkit-scrollbar{
+    width: 10px;
 }
-
-.card {
-  padding: 2em;
+::-webkit-scrollbar-track{
+    background-color: aliceblue;
 }
-
-.read-the-docs {
-  color: #888;
+::-webkit-scrollbar-thumb{
+    background-color: var(--color-green);
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--color-greenMore);
 }

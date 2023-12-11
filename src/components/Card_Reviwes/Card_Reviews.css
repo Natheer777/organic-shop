@@ -1,0 +1,24 @@
+.Card_Rewiwes{
+background-color: white;
+border-radius: 10px;
+}
+.Card_Rewiwes h5{
+text-align: center;
+padding: 10vh;
+padding-bottom: 3vh;
+font-size: 14px;
+line-height: 1.4;
+opacity: 0.8;
+}
+.Card_Rewiwes img{
+width: auto;
+margin: auto;
+padding-bottom: 6vh;
+}
+.Card_Rewiwes b{
+    text-align: center;
+}
+.AiFillStar{
+color: rgb(225, 225, 26);
+font-size: 3vh;
+}

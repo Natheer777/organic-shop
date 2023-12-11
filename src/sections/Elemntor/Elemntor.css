@@ -1,0 +1,30 @@
+.card1
+,.card2
+,.card3
+,.card4{
+    border-radius: 10px;
+    margin: 30px 5px 30px 5px;
+    padding: 3vh;
+    width: 45vh;
+    background-color:rgb(45, 44, 44);
+}
+.containers{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.containers svg{
+    color: var(--color-green);
+}
+.card1{
+    transition-delay: 200ms;
+}
+.card2{
+    transition-delay: 400ms;
+}
+.card3{
+    transition-delay: 600ms;
+}
+.card4{
+    transition-delay: 800ms;
+}

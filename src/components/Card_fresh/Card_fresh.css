@@ -1,0 +1,30 @@
+.card_fresh_item{
+    background-color: white;
+}
+.card_fresh_item button{
+    background-color: var(--color-greenMore);
+    color: white;
+    border: none;
+    text-align: center;
+    padding:2vh 4vh;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 15px;
+    height: 8vh;
+}
+.card_fresh_item button:hover{
+    transition: 0.8s;
+    background-color: var(--color-green);
+}
+.card_fresh_item p{
+    opacity: 0.6;
+    font-size: 14px;
+}
+.card_fresh_item img{
+    max-width: 30%;
+}
+.between{
+    display: flex;
+    justify-content: space-between;
+}

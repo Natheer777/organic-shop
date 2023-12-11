@@ -1,0 +1,17 @@
+.paper{
+    width: 25vh;
+    position: relative;
+    top: -12vh;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width : 992px) and (min-width:720px){
+    .paper{
+        width: 20vh;
+    }
+}
+@media (max-width:719px) {
+  .paper{ width: 15vh;
+    top: -65px;
+  }
+}
