@@ -10,7 +10,7 @@ import {Card_Reviews} from "../../components/index"
 import Data from '../../Data/Card_Reviews'
 
 import { FaCartPlus } from "react-icons/fa";
-
+import { Link } from "react-router-dom";
 
 export default function Reviews(){
 
@@ -39,7 +39,7 @@ export default function Reviews(){
    <div className="diffrinse  col-lg-4 top ">
     <h2 className="text-white">Deal Of The Day 15% Off On All Vegetables!</h2>
     <p className="text-white">I am text block. Click edit button to change this tex em ips.</p>
-    <button className="ButtonShop">Shop Now <FaCartPlus/></button>
+   <Link to="/Everything"><button className="ButtonShop">Shop Now <FaCartPlus/></button></Link> 
    </div>
    <div className="col-lg-4  mt-5 right">{card[1]}</div>
     </div>

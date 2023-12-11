@@ -21,14 +21,14 @@ const Header = () => {
   <div className="collapse navbar-collapse ms-3" id="navbarNavAltMarkup">
     <div className="navbar-nav ms-3">
       <Link to='/Everything' className="nav-item nav-link Link active Everything">Everything</Link>
-      <a className="nav-item nav-link" href="/#">Groceries</a>
-      <a className="nav-item nav-link" href="/#">Juice</a>
+      <Link className="nav-item nav-link" to="/Everything">Groceries</Link>
+      <Link className="nav-item nav-link" to="/Everything">Juice</Link>
     </div>
       <div className='navbar-nav difrrens ms-3'>
-      <a className="nav-item nav-link" href="/#">About </a>
-      <a className="nav-item nav-link" href="/#"> Contact</a>
-      <a className="total nav-item nav-link fw-bold" href="/#">0.00 &#8364;</a>
-      <a className="nav-item nav-link ms-4" href="/#"><FaUserAlt/></a>
+      <Link className="nav-item nav-link" to="/Everything">About </Link>
+      <Link className="nav-item nav-link" to="/Everything"> Contact</Link>
+      <Link className="total nav-item nav-link fw-bold" href="/#">0.00 &#8364;</Link>
+      <Link className="nav-item nav-link ms-4" to="/Everything"><FaUserAlt/></Link>
       
       </div>
   </div>

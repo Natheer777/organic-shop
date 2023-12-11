@@ -66,7 +66,7 @@ export default function Card_Shop_Everything(props) {
               <AiFillStar />
             </p>
             <p className="product_item_price">{props.price}</p>
-            <button id="detailsPage" onClick={()=>detailsPage(props)}>Viwe button  </button>
+            <button id="detailsPage" onClick={()=>detailsPage(props)}>Viwe Details  </button>
           </div>
         </div>
       </div>

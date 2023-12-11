@@ -8,24 +8,40 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
+/////////////////////////
 
-useEffect(()=>{
-
-  const up = document.querySelectorAll(".up")
-window.onscroll = function(){
-  this.scrollY >= 1000 ? up.classList.add("look") : up.classList.remove("look");
-}
-up.onclick = function(){
-  window.scrollTo({
-    top:0,
-    behavior:"smooth",
-  })
-}
-},[])
-
+  useEffect(() => {
+    const up = document.querySelectorAll(".up");
   
+    const handleScroll = () => {
+      window.scrollY >= 100
+        ? up.forEach((item) => item.classList.add("look"))
+        : up.forEach((item) => item.classList.remove("look"));
+    };
+  
+    const handleScrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    };
+  
+    window.addEventListener("scroll", handleScroll);
+    up.forEach((item) => item.addEventListener("click", handleScrollToTop));
+  
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      up.forEach((item) => item.removeEventListener("click", handleScrollToTop));
+    };
+  }, []);
+
+  //////////////////////////////
+
   useEffect(() => {
     setInterval(() => {
       

@@ -1,12 +1,14 @@
 import "./Shop.css";
-import React,{useState} from 'react'
+import React,{useState , useEffect} from 'react'
 import data from '../../Data/Shop_Everything'
 import {Card_Shop_Everything} from '../../components/index'
 
 export default function Shop() {
 
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
   const Card = data.map((Card)=>{
@@ -30,6 +32,8 @@ export default function Shop() {
       <div className="contanier mt-4">
         <h1 className="Head_line text-center">Shop</h1>
         <div className="row w-100 m-auto">
+
+          
           <div className="section1 col-lg-3 col-md-12">
             <input
               id="SearchInput"
