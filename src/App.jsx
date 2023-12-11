@@ -10,6 +10,7 @@ function App() {
 
 
 
+
 useEffect(()=>{
 
   const up = document.querySelectorAll(".up")
@@ -61,7 +62,7 @@ up.onclick = function(){
     <button className='up'>up</button>
       <Router>
         <Routes>
-          <Route path= "/organic-shop/" element={<Home />} />
+          <Route path='/Organic-shop/' element={<Home />} />
           <Route path='/Everything' element={<Everything />} />
         </Routes>
       </Router>
